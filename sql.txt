@@ -1,0 +1,43 @@
+
+create Table Admin(
+Admin_id char(2)primary key,
+Salary char(4),
+ophone char(10),
+userName varchar2(10),
+PASSWORD1 varchar2(15)
+);
+create Table Customer(
+passport char(12) primary key,
+Reservesion_id char(2)
+);
+create table section(
+sectionName varchar2(20),
+sectionId varchar2(10) primary key,
+managerId varchar2(10)
+);
+Create Table person( 
+SSN_ char(9)  primary key,
+Name_ varchar2(20),
+Phone_ char(13),
+Gender_ char(1),
+Birthday_ varchar2(10),
+Email_ varchar(30),
+Password_ varchar2(10),
+City_ varchar2(15)
+);
+Create table Inquiry(
+Trip_id varchar(10) primary key,
+Descrep varchar(1)
+);
+create table Reservation (
+Trip_id varchar2(10),
+Tourist_id varchar2(40) ,
+price varchar2(4),
+Reservation_id NUMBER(4)primary key
+
+);
+
+
+
+
+
